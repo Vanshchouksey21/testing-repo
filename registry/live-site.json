@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0",
+  "application": "live-site",
+  "name": "Live Site Testing Suite",
+  "allowedCategories": ["unit", "integration", "e2e"],
+  "tests": [
+    {
+      "id": "live-unit-1",
+      "name": "Unit-1: Validate Email Formats",
+      "category": "unit",
+      "runner": "vitest",
+      "file": "tests/unit/helpers.test.ts",
+      "enabled": true
+    },
+    {
+      "id": "live-unit-2",
+      "name": "Unit-2: Format Full Name",
+      "category": "unit",
+      "runner": "vitest",
+      "file": "tests/unit/helpers.test.ts",
+      "enabled": true
+    },
+    {
+      "id": "live-unit-3",
+      "name": "Unit-3: Parse Currency String",
+      "category": "unit",
+      "runner": "vitest",
+      "file": "tests/unit/helpers.test.ts",
+      "enabled": true
+    },
+    {
+      "id": "live-int-1",
+      "name": "Integration-1: GET /api/users?page=2 Schema Check",
+      "category": "integration",
+      "runner": "vitest",
+      "file": "tests/integration/reqres-api.test.ts",
+      "enabled": true
+    },
+    {
+      "id": "live-int-2",
+      "name": "Integration-2: GET /api/users/23 (404 Not Found)",
+      "category": "integration",
+      "runner": "vitest",
+      "file": "tests/integration/reqres-api.test.ts",
+      "enabled": true
+    },
+    {
+      "id": "live-e2e-1",
+      "name": "E2E-1: Home Page Loads with Catalogue",
+      "category": "e2e",
+      "runner": "playwright",
+      "file": "tests/e2e/live-website.spec.ts",
+      "enabled": true
+    },
+    {
+      "id": "live-e2e-2",
+      "name": "E2E-2: Travel Category Navigation & Product Pricing",
+      "category": "e2e",
+      "runner": "playwright",
+      "file": "tests/e2e/live-website.spec.ts",
+      "enabled": true
+    }
+  ]
+}
+

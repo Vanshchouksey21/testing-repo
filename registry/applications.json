@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "supportedCategories": ["unit", "integration", "e2e"],
+  "applications": [
+    {
+      "id": "live-site",
+      "name": "Live Site Testing Suite",
+      "description": "Production tests for live sites (ReqRes API & Books to Scrape UI).",
+      "stack": "node",
+      "language": "typescript",
+      "source": {
+        "type": "remote",
+        "githubRepoUrl": null,
+        "defaultBranch": "main"
+      },
+      "registryFile": "registry/live-site.json",
+      "frameworks": {
+        "unit": "vitest",
+        "integration": "vitest",
+        "e2e": "playwright"
+      },
+      "enabled": true
+    }
+  ]
+}
+
