@@ -42,7 +42,7 @@ test.describe("E2E Tests - Books to Scrape Live Store", () => {
     const priceElement = page.locator("p.price_color").first();
     await expect(priceElement).toBeVisible();
 
-    const availability = page.locator("p.instock.availability");
+    const availability = page.locator("p.instock.availability").first();
     await expect(availability).toBeVisible();
     await expect(availability).toContainText("In stock");
   });
